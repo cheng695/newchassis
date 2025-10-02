@@ -31,3 +31,11 @@ void Clicker::DR16::DR16DataUpdata(const uint8_t *pData)
         
     reserved_.reserved = ((int16_t)pData[16]) | ((int16_t)pData[17] << 8);
 }
+
+void RemoteRxData(const uint8_t* rx_buffer, uint16_t size)
+{
+    if(size == 18)
+    {
+        dr16.DR16DataUpdata(rx_buffer);
+    }
+}

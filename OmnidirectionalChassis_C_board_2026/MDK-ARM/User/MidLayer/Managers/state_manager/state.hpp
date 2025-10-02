@@ -3,17 +3,16 @@
 
 #include "main.h"
 
-// 前向声明，避免包含djimotor.hpp
-namespace motor 
-{
+// 前向声明
+namespace motor {
     class DJImotor;
 }
 
-namespace Clicker
-{
+namespace Clicker {
     class DR16;
 }
 
+// 外部变量声明
 extern motor::DJImotor M3508_201;
 extern motor::DJImotor M3508_202;
 extern motor::DJImotor M3508_203;
@@ -21,34 +20,9 @@ extern motor::DJImotor M3508_204;
 
 extern Clicker::DR16 dr16;
 
+
 namespace State
 {
-    class monitoring
-    {
-        public:
-            int lastUpdateTime;
-            int currentTime;
-            bool isOnline;
-            void getlastTime()
-            {
-                currentTime = HAL_GetTick();
-            }
-
-            void getTime()
-            {
-                lastUpdateTime = HAL_GetTick();
-            }
-            
-            bool checkTime(int time)
-            {
-                if (currentTime - lastUpdateTime > time)
-                {
-                    isOnline = false;
-                }
-                return isOnline;
-            }
-    };
-
     class model
     {
         enum model_state
@@ -61,39 +35,11 @@ namespace State
             KEYBOARD,  //1,1
         };
         public:
-               void updateState() 
-               {
-                    // 根据遥控器s1和s2的值更新状态
-                    if (dr16.rc.s1 == 2 && dr16.rc.s2 == 2) 
-                    {
-                        current_state = STOP;
-                    }
-                    else if (dr16.rc.s1 == 2 && dr16.rc.s2 == 3) 
-                    {
-                        current_state = FOLLOW;
-                    }
-                    else if (dr16.rc.s1 == 3 && dr16.rc.s2 == 2) 
-                    {
-                        current_state = NOTFOLLOW;
-                    }
-                    else if(dr16.rc.s1 == 2, dr16.rc.s2 == 1)
-                    {
-                        current_state = SHOT;
-                    }
-                    else if(dr16.rc.s1 == 1, dr16.rc.s2 == 2)
-                    {
-                        current_state = VISION;
-                    }
-                    else if(dr16.rc.s1 == 1, dr16.rc.s2 == 1)
-                    {
-                        current_state = KEYBOARD;
-                    }
-                }
-                
-                model_state getCurrentState() 
-                {
-                    return current_state;
-                }
+			void updateState();  // 声明，实现在.cpp文件中
+			model_state getCurrentState() 
+			{
+				return current_state;
+			}
 
         private:
             model_state current_state = STOP;
@@ -102,5 +48,6 @@ namespace State
 }
 
 void MotorState();
+void RemoteState();
 
 #endif

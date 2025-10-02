@@ -27,4 +27,4 @@ omnidirectionalchassis_c_board_2026/callback.o: \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\dma.h User\..\User\LowLayer\Equipment\remote\Dr16.hpp
+  ..\Core\Inc\dma.h

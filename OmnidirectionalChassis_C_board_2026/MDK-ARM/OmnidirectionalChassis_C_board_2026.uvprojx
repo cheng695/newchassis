@@ -809,6 +809,11 @@
               <FileType>8</FileType>
               <FilePath>.\User\MidLayer\Managers\state_manager\state.hpp</FilePath>
             </File>
+            <File>
+              <FileName>state_base.hpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\User\MidLayer\Managers\state_manager\state_base.hpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -873,6 +878,11 @@
               <FileName>djimotor.hpp</FileName>
               <FileType>8</FileType>
               <FilePath>.\User\LowLayer\Equipment\motor\djimotor.hpp</FilePath>
+            </File>
+            <File>
+              <FileName>motor_base.hpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\User\LowLayer\Equipment\motor\motor_base.hpp</FilePath>
             </File>
           </Files>
         </Group>

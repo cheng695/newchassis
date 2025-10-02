@@ -70,6 +70,7 @@
 "omnidirectionalchassis_c_board_2026\power_1.o"
 "omnidirectionalchassis_c_board_2026\state.o"
 "omnidirectionalchassis_c_board_2026\state_1.o"
+"omnidirectionalchassis_c_board_2026\state_base.o"
 "omnidirectionalchassis_c_board_2026\anhe.o"
 "omnidirectionalchassis_c_board_2026\anhe_1.o"
 "omnidirectionalchassis_c_board_2026\developed.o"

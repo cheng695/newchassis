@@ -4,7 +4,8 @@
 #include "usart.h"
 #include "dma.h"
 #include "string.h"
-#include "../User/MidLayer/Managers/state_manager/state.hpp"
+#include "../User/MidLayer/Managers/state_manager/state_base.hpp"
+#include "../User/LowLayer/HAL_\uart\uart_driver.hpp"
 
 namespace Clicker
 {

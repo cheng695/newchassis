@@ -28,4 +28,6 @@ omnidirectionalchassis_c_board_2026/state.o: \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
   User\..\User\LowLayer\Equipment\motor\djimotor.hpp \
   User\..\User\LowLayer\HAL_\can\can_driver.hpp ..\Core\Inc\can.h \
-  User\..\User\MidLayer\Managers\state_manager\state.hpp
+  User\..\User\MidLayer\Managers\state_manager\state_base.hpp \
+  User\..\User\LowLayer\Equipment\remote\dr16.hpp ..\Core\Inc\usart.h \
+  ..\Core\Inc\dma.h User\..\User\LowLayer\HAL_\uart\uart_driver.hpp

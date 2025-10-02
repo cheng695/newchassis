@@ -1,8 +1,6 @@
-omnidirectionalchassis_c_board_2026/target.o: \
-  User\MidLayer\Controllers\signal_processing\target.cpp \
-  User\MidLayer\Controllers\signal_processing\target.hpp \
-  User\..\User\LowLayer\Equipment\remote\Dr16.hpp ..\Core\Inc\usart.h \
-  ..\Core\Inc\main.h ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
+omnidirectionalchassis_c_board_2026/state_base.o: \
+  User\MidLayer\Managers\state_manager\state_base.hpp ..\Core\Inc\main.h \
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h \
@@ -26,7 +24,4 @@ omnidirectionalchassis_c_board_2026/target.o: \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
-  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Core\Inc\dma.h \
-  User\..\User\MidLayer\Managers\state_manager\state_base.hpp \
-  User\..\User\LowLayer\HAL_\uart\uart_driver.hpp
+  ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h

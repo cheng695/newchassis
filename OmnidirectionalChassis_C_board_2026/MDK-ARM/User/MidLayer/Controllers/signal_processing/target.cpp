@@ -13,7 +13,7 @@ void Target::target::TargetDataUpdate()
 }
 
 
-float channels[] = {dr16.rc.ch0, dr16.rc.ch1, dr16.rc.ch2, dr16.rc.ch3, dr16.reserved_.reserved};
+float channels[] = {(float)dr16.rc.ch0, (float)dr16.rc.ch1, (float)dr16.rc.ch2, (float)dr16.rc.ch3, (float)dr16.reserved_.reserved};
 bool* flags[] = {&dr16_tar.dead_zone_flag0, &dr16_tar.dead_zone_flag1, &dr16_tar.dead_zone_flag2, &dr16_tar.dead_zone_flag3, &dr16_tar.dead_zone_flag4};
 
 void Dead_zone() 
